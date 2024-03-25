@@ -18,7 +18,7 @@ const App = () => {
   console.log("app");
 
   const { data, loading, error } = useFetch(
-    "https://jsonplaceholder.typicode.com/userss"
+    "https://jsonplaceholder.typicode.com/users"
   );
 
   console.log(data);

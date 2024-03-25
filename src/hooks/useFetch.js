@@ -12,7 +12,7 @@ export const useFetch = (url) => {
     const fetchData = useCallback(async () => {
 
         setLoading(true);
-
+        console.log("useFetch");
         try {
 
             const res = await fetch(url);
@@ -30,8 +30,10 @@ export const useFetch = (url) => {
     }, []);
 
     useEffect(() => {
+        console.log("useEffect");
 
         fetchData();
+
     }, []);
 
 
